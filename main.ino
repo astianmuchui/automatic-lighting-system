@@ -2,8 +2,8 @@ int pir = 1;
 int relay = 12;
 
 void setup(){
-	pinMode(pir,INPUT);
-  	pinMode(relay,OUTPUT);
+  pinMode(pir,INPUT);
+  pinMode(relay,OUTPUT);
 }
 
 void loop(){
