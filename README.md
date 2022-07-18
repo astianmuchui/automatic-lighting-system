@@ -1,2 +1,3 @@
 # home-lights
-Use PIR motion sensor and single pole double throw ( SPDT ) relay to turn on lights in a room when one enters a room
+### CIRCUIT 
+![Capture](https://user-images.githubusercontent.com/67919419/179478771-a268db8b-e51c-433a-a665-dc20cce27ce3.PNG)
