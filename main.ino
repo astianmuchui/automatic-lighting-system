@@ -8,36 +8,36 @@ void setup(){
 
 void loop(){
   if(detect_motion()){
-  	switchOnLights();
+    switchOnLights();
   }else{
-  	SwitchOff();
+    SwitchOff();
   }
 }
 
 bool detect_motion(){
-	int status = digitalRead(pir);
+  int status = digitalRead(pir);
   if(status == HIGH){
-  	return true;
-  }	else{
-  	return false;
+    return true;
+  }else{
+    return false;
   }
 }
 
 void switchOnLights(){
-  	// check if lights were on
+  // check if lights were on
   
   if(digitalRead(relay) == LOW){
-	digitalWrite(relay,HIGH);
-  	// Turn on lights for 5 minutes
-  	delay(50000);  
+   digitalWrite(relay,HIGH);
+   // Turn on lights for 5 minutes
+    delay(50000);  
     SwitchOff();
   }else{
-  	// Do nothing
+    // Do nothing
   }
 
   	
 }
 
 void SwitchOff(){
-	digitalWrite(relay,LOW);
+  digitalWrite(relay,LOW);
 }
