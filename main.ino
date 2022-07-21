@@ -28,7 +28,8 @@ void switchOnLights(){
   
   if(digitalRead(relay) == LOW){
    digitalWrite(relay,HIGH);
-   // Turn on lights for 5 minutes
+   // Turn on lights for 5 minutes 
+    // Change this accordingly
     delay(50000);  
     SwitchOff();
   }else{
