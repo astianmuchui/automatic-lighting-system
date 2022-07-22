@@ -1,3 +1,4 @@
+// Pinouts : Changeable
 int pir = 1;
 int relay = 12;
 
@@ -14,6 +15,7 @@ void loop(){
   }
 }
 
+// Return true if motion is detected.. 
 bool detect_motion(){
   int status = digitalRead(pir);
   if(status == HIGH){
